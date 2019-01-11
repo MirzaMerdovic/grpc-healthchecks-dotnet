@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package ConosleOut.Book;
+option csharp_namespace = "ConsoleOut.Book.Contract";
+
+// google.protobuf package
+import "google/protobuf/wrappers.proto";
+
+message GetBookByIdRequest {
+	int32  Id = 1;
+}
+
+message GetBookByIdResponse {
+	int32 Id = 1;
+	string Name = 2;
+	google.protobuf.StringValue Description = 3;
+}
+
+service BookService {
+	rpc GetBookById(GetBookByIdRequest) returns (GetBookByIdResponse) {} 
+}

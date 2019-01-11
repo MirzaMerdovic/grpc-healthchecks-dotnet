@@ -1,2 +1,3 @@
-# netcore-grpc-healthcheck-example
-Example on how to setup gRPC server to allow healthchecks using C#
+# Health checks for gRPC service in dotnetcore
+
+Example on how to setup gRPC server to allow health checks using C#

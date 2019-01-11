@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RuntimeFrameworkVersion>2.2.1</RuntimeFrameworkVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputPath>bin</OutputPath>
+    <AssemblyName>ConsoleOut.Book.Client</AssemblyName>
+    <RootNamespace>ConsoleOut.Book.Client</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.HealthCheck" Version="1.17.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Book.Contract\Book.Contract.csproj" />
+  </ItemGroup>
+
+</Project>
